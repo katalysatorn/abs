@@ -1,0 +1,10 @@
+[package]
+name = "abs"
+version = "0.0.1"
+edition = "2024"
+
+description = "My simple* system for hosting an archlinux mirror as well as an AUR repo for building custom packages "
+license = "GPL-3.0"
+repository = "https://github.com/katalysatorn/abs"
+
+[dependencies]
