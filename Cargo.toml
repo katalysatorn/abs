@@ -8,3 +8,7 @@ license = "GPL-3.0"
 repository = "https://github.com/katalysatorn/abs"
 
 [dependencies]
+serde = "1.0.217"
+serde_json = "1.0.138"
+tracing = "0.1.41"
+tracing-subscriber = "0.3.19"
