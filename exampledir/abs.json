@@ -1,0 +1,21 @@
+{
+    "directories": {
+        "rootdir": "~/Downloads/abs",
+        "logdir": "$rootdir/logs",
+        "pubdir": "$rootdir/public",
+        "privdir": "$rootdir/private"
+    },
+
+    "repositories": [
+        {
+            "name": "testrepo-1",
+            "exclude-packages": ["hyprland-git", "kitty-git"]
+        },
+        {
+            "name": "testrepo-2",
+            "type": "private"
+        }
+    ],
+
+    "packages": ["hyprland", "hyprland-git", "kitty", "kitty-git"]
+}
