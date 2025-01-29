@@ -1,0 +1,12 @@
+{
+    "rootdir": "~/abs",
+    "repositories": {
+        "testrepo1": {
+            "reponame": "test-repo-1",
+            "repo-dir": "$priv/$repo"
+        },
+        "testrepo2": {
+            "reponame": "$pub/test-repo-2"
+        }
+    }
+}
