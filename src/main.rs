@@ -5,7 +5,7 @@ use tracing::{error, info};
 
 const CONFIGFILEPATHS: [&str; 3] = ["./abs", "./exampledir/abs.json", "~/.config/abs/abs.json"];
 
-fn open_config() -> Result<(), ()> {
+fn open_config_old() -> Result<(), ()> {
     for validpath in CONFIGFILEPATHS {
         match File::open(validpath) {
             Ok(f) => {
@@ -23,6 +23,18 @@ fn open_config() -> Result<(), ()> {
 
     return Err(());
 }
+
+struct Repository {
+    name: String,
+    exclude_packages: [String]
+}
+struct Config {
+    rootdir: String,
+    logdir: String,
+    pubdir: String
+}
+
+fn open_config() -> Config
 
 fn main() {
     tracing_subscriber::fmt::init();
