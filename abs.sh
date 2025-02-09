@@ -6,7 +6,7 @@ ROOTDIR=$(pwd)
 echo $ROOTDIR
 
 # Setup TMPDIR
-if ! [[ -n "$TMPDIR" ]]; then
+if ! [[ -v "$TMPDIR" ]]; then
 	TMPDIR=/tmp/abs
 fi
 echo "" > $TMPDIR/built
