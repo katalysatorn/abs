@@ -1,0 +1,3 @@
+[submodule "exampledir/sources/custom/katalysatorn-keyring"]
+	path = exampledir/sources/custom/katalysatorn-keyring
+	url = git@github.com:katalysatorn/katalysatorn-keyring
